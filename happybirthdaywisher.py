@@ -4,9 +4,12 @@ import smtplib
 import random
 import datetime
 
-email = "mrafay280@gmail.com"
-password = "gwcboacfvpjmdray"
-
+email = "youremail@gmail.com"
+password = "your app password provided by google"
+#to get an app password
+#go to manage google account in ypur browser
+#then go to security and turn on 2 step verification
+#now search app passwords and generate a password for your app
 
 file_data = pandas.read_csv("D:/Python/Happy Birthday Wisher/birthdays.csv")
 birthdays_dict = {(row["month"], row["day"]): {"name": row["name"], "email": row["email"]} for (index, row) in
